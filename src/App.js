@@ -20,3 +20,10 @@ class App extends Component {
 }
 
 export default App;
+
+//*echo "# reactApp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/chityalaumamahesh/reactApp.git
+git push -u origin master*/

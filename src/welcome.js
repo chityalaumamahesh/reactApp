@@ -5,7 +5,7 @@ function FormattedDate(props) {
 }
 class Welcome extends React.Component {
   constructor(props) {
-    console.log("props",props);
+    
     super(props);
     this.state = {
       date: new Date(),
@@ -15,6 +15,7 @@ class Welcome extends React.Component {
     this.name = "React App";
   }
     componentDidMount() {
+      console.log("props",this.props);
       this.timerID = setInterval(
       () => this.tick(),
       1000

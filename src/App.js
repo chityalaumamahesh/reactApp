@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './welcome';
 import Toggle from './Toggle';
+import LoginControl from './LoginControl';
+import Page from './Page';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -16,12 +19,17 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div>
         <header className="App-header">
         
         </header>
-        < Welcome name ="Umamahesh and K Sudarshan"/>
+        < Welcome name ="welcome to dashboard"/>
+        
+        <div className="App">
         <Toggle />
+        <LoginControl />
+            <Page/>
+        </div>
       </div>
     );
   }

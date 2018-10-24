@@ -5,6 +5,8 @@ import Welcome from './welcome';
 import Toggle from './Toggle';
 import LoginControl from './LoginControl';
 import Page from './Page';
+import Embededmap from './Embededmap';
+import NameForm from './NameForm';
 
 class App extends Component {
   constructor(props) {
@@ -26,9 +28,11 @@ class App extends Component {
         < Welcome name ="welcome to dashboard"/>
         
         <div className="App">
+        <NameForm />
         <Toggle />
         <LoginControl />
-            <Page/>
+        <Page/>
+        <Embededmap />
         </div>
       </div>
     );
